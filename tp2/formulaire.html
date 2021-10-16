@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fichier.css">
+    <script type="text/javascript" src="formulaire.js"></script>
+        
+</head>
+
+
+<body>
+    <h1>Saisie d'une fiche "Personne"</h1> </br>
+ 
+
+
+      <form action="traitement.php" method="POST" id="form">
+        <div class="tab">
+        <label for="nom" >name:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+          <span id='error'></span>
+        </br>
+        <label for="nom">Prénom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+  
+        <label for="Date">Date de naissance</label>
+        <input type="date" id="date" name="date" placeholder="JJ/MM/AAAA" required></br></br>
+
+        <label for="adress">Adress</label>
+        <input type="text" id="adress" name="adress" required><br><br>
+
+        <label for="email">Mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+      <!--  <input class="val" type="button" value="Valider" ">-->
+      <button class="but" type="submit">enregistrer</button>
+    </div>
+    </form>
+
+
+ 
+    
+   
+</body>
+</html>

@@ -1,0 +1,17 @@
+label
+{
+  
+    width:200px; /* Attention : prenez une largeur suffisamment grande */
+    float:left;
+}
+.but{
+margin-left: 200px;}
+
+.tab{
+  background-color:white;
+}
+body{
+    background: rgb(179, 178, 178);
+}
+
+
