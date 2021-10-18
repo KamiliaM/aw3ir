@@ -20,3 +20,15 @@ margin-left: 40px;
 
 
 }
+div#error{
+  background-color: red;
+  border: 1px solid black;
+padding: 5px;
+display: none;
+}
+div#resultat{
+  background-color: green;
+  border: 1px solid black;
+padding: 5px;
+display: none;
+}
