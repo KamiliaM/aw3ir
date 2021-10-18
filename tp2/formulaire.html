@@ -13,18 +13,18 @@
 
 
 <body>
-    <h1>Saisie d'une fiche "Personne"</h1> </br>
+    <h3>Saisie d'une fiche "Personne"</h3> </br>
  
 
 
-      <form action="traitement.php" method="POST" id="form">
+      <form  method="POST" id="myForm">
         <div class="tab">
         <label for="nom" >name:</label>
-        <input type="text" id="nom" name="nom" required><br><br>
-          <span id='error'></span>
-        </br>
-        <label for="nom">Prénom:</label>
-        <input type="text" id="nom" name="nom" required><br><br>
+        <input type="text" id="nom" name="nom" required ><br><br>
+
+    
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
   
         <label for="Date">Date de naissance</label>
         <input type="date" id="date" name="date" placeholder="JJ/MM/AAAA" required></br></br>
@@ -35,14 +35,23 @@
         <label for="email">Mail:</label>
         <input type="email" id="email" name="email" required><br><br>
         
-      <!--  <input class="val" type="button" value="Valider" ">-->
-      <button class="but" type="submit">enregistrer</button>
+    <!--  <input class="but" type="button" value="Valider" onclick="validation()">-->
+    <button class="but" type="submit" onclick="validation()">enregistrer</button>
+    </br>   </br>
+
     </div>
     </form>
 
 
  
-    
+<table class="hi">
+ <td bgcolor="red">    <div id="error"></div></td> 
+</table>
+<table>
+
+ <td bgcolor="green">      <div id="resultat"></div></td>
+
+</table>
    
 </body>
 </html>

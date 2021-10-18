@@ -1,17 +1,22 @@
 label
 {
   
-    width:200px; /* Attention : prenez une largeur suffisamment grande */
+    width:100px; /* Attention : prenez une largeur suffisamment grande */
     float:left;
 }
 .but{
-margin-left: 200px;}
+margin-left: 100px;}
 
 .tab{
+  width:300px; 
   background-color:white;
 }
 body{
     background: rgb(179, 178, 178);
 }
 
+.hi{
+margin-left: 40px;
 
+
+}
