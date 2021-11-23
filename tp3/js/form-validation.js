@@ -136,6 +136,7 @@ window.onload = function () {   // ce code est exécuter une fois que toute la p
       document.getElementById("resultat").innerHTML="Bienvenue"+" "+name+" "+prenom+" Vos Informations sont Validées" ; 
       document.getElementById("resultat").style.display = 'block' ;    
       document.querySelector(".modal-title1").textContent ="Bienvenue"+" "+ prenom;
+      document.querySelector(".adress").textContent =" "+ adresse;
 
       document.querySelector(".modal-body .date").textContent = dateNaissance.toLocaleDateString();
       document.querySelector(".modal-body img").src = ' https://maps.googleapis.com/maps/api/staticmap?markers='+adresse+'&zoom=7&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg ';

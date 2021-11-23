@@ -20,8 +20,8 @@
 
     <div class="row justify-content-md-center">
       <div class="col ">
-        <h1 style="color: blue;">TP AW </h1>
-        <h5 style="color: blue;"> bootstrap v5.1</h5>
+        <h1 style="color: rgb(41, 41, 43);">TP AW </h1>
+        <h5 style="color: rgb(41, 41, 43);"> bootstrap v5.1</h5>
       </br> </br>
 
 
@@ -37,14 +37,14 @@
 
 
       <div class="row mb-3">
-        <label class="col-sm-2 col-form-label" for="prenom">Prenom :</label>
+        <label class="col-sm-2 col-form-label" for="prenom">Prenom </label>
         <div class="col-sm-10"><input type="text" id="prenom" name="user_prenom" required></div>
       </div>
 
 
 
       <div class="row mb-3">
-        <label class="col-sm-2 col-form-label" for="datenaissance">Date de Naissance :</label>
+        <label class="col-sm-2 col-form-label" for="datenaissance">Date de Naissance </label>
         <div class="col-sm-10">
           <input placeholder="JJ/MM/AAAA" type="date" id="datenaissance" name="user_datenaissance"
             required></div>
@@ -53,7 +53,7 @@
 
 
       <div class="row mb-3">
-        <label class="col-sm-2 col-form-label" for="adresse">Adresse :</label>
+        <label class="col-sm-2 col-form-label" for="adresse">Adresse </label>
         <div class="col-sm-10"><input type="name" id="adresse" name="user_adresse" required></div>
       </div> 
 
@@ -65,12 +65,9 @@
             placeholder="default@example.com"></div>
       </div>
 
-
-    
-
-      <br><br>
       <div class="row mb-3" >
-        <div class="col-sm-10" ><input type="button" class="btn btn-primary" value="Valider" onclick="validation()"></div>
+        <label class="col-sm-2 col-form-label"> </label>
+        <div class="col-sm-2 col-form-label" ><input type="button" class="btn btn-primary" value="Valider" onclick="validation()"></div>
       </div>
 
 
@@ -104,12 +101,13 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title1" id="exampleModalLabel"></h1>
+          <h3 class="modal-title1" id="exampleModalLabel"></h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">Vous ètes née le
+        <div class="modal-body">Vous êtes né(e) le
 
-          <span class="date"></span> et vous habitez ici
+         <b> <span class="date"></span> </b>
+          et vous habitez à<b><span class="adress"></span> </b>
           <img src="itinéraire.png" style=" max-width: 100%">
         </div>
         <div class="modal-footer">
