@@ -1,3 +1,8 @@
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
 function validation() {
   var nom = document.querySelector("#nom").value;
   var prenom = document.querySelector("#prenom").value;
@@ -55,14 +60,21 @@ document.getElementById("resultat").style.display='none';
     return false;
   }
 
-  if (email == "") {
-    document.getElementById("error").innerHTML = "saisie de l'email est obligatoir";
-    document.getElementById("error").style.display='block';
+if(email == ""||email.length<5)
+  {
+      document.getElementById("error").innerHTML="les champs mail doivent avoir 5 caractères mininum";
+      document.getElementById("error").style.display = 'block';                                 
 
-    myForm['email'].focus();
-    alert("mettez votre nom");
-    return false;
+      return false; 
+  }else if(!validateEmail(email))
+  {
+
+      document.getElementById("error").innerHTML="Synthaxe du mail est incorrecte";
+      document.getElementById("error").style.display = 'block';                                 
+
+      return false; 
   }
+ 
 
 
 
