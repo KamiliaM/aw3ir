@@ -4,8 +4,17 @@ window.onload = function () {   // ce code est exécuter une fois que toute la p
      
      // Y mettre le code Javascript pour valider tous les champs du formulaire
  };
-    
-    
+ function calcNbChar(name) {
+    document.querySelector(`#${name} + span`).textContent = document.querySelector(`#${name}`).value.length;
+  }
+  document.querySelector("table tbody").innerHTML =
+  document.querySelector("table tbody").innerHTML +
+  "<tr><td>" +
+  nom +
+  "</td><td>" +
+  prenom +
+  "</td><td>";
+// CODE à compléter pour insérer les autres données
     function validateEmail(mail) {
             const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return re.test(String(mail).toLowerCase());
