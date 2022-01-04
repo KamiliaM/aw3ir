@@ -36,7 +36,5 @@ function showError(error) {
       document.querySelector("#map").innerHTML = "An unknown error occurred.";
       break;
   }
-  function calcNbChar(id) {
-    document.querySelector(`#${id} + span`).textContent = document.querySelector(`#${id}`).value.length;
-  }
+
 }
