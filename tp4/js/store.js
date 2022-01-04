@@ -25,7 +25,7 @@ var contactStore = (function () {
             contactList.push(contact);
             for (var index in contactList) {
 
-
+                
                 console.log(contactList[index].name);
                 console.log(contactList[index].prenom);
                 console.log(contactList[index].datenaissance);
@@ -34,23 +34,22 @@ var contactStore = (function () {
 
 
                 document.querySelector("table tbody").innerHTML =
-                    document.querySelector("table tbody").innerHTML +
+                document.querySelector("table tbody").innerHTML + 
                     "<tr><td>" +
                     _name +
                     "</td><td>" +
                     _firsname +
                     "</td><td>" +
                     _date +
-                    "</td><td> <a href>" +
-                    _adress +
-                    "</td><td> <a href>" +
+                    "</td><td> <a href='https://maps.google.com/?q= adresse'>" +
+                   _adress +
+                    "</td><td> <a href='mailto:mail'>"+
                     _mail +
                     "</td><td>";
-                return contactList;
-            }
-
+                return contactList;              }
+         
         },
-
+    
         getList: function () {
             return contactList;
         },
