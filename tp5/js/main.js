@@ -108,10 +108,10 @@ window.onload = function () {
                 // on met la réponse du webservice dans la variable cityWeather
                 app.cityWeather = json;
                 app.message = null;
-            }else{
+            }
+            else{
                 app.cityWeather = null;
-                app.message = 'Météo introuvable pour ' + _city.name 
-                                + ' (' + json.message+ ')';
+                app.message = 'Météo introuvable pour '+_city.name+'('+json.message+')';
             }        
         });        
     }
