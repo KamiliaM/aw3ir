@@ -1,5 +1,6 @@
 <!-- meteo de la ville selectionnée -->
 <!-- meteo de la ville selectionnée -->
+
 <div *ngIf="meteo && meteo.cod === 200">
 
     <nav aria-label="breadcrumb">
@@ -7,7 +8,7 @@
             <li class="breadcrumb-item">
                 <a routerLink="/">🏠</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Météo pour {{meteo.name}}</li>
+            <li class="breadcrumb-item active" aria-current="page">Welcome to : Météo pour {{meteo.name}}</li>
         </ol>
     </nav>
 
@@ -53,5 +54,6 @@
 
     {{meteo.message}} (erreur {{meteo.cod}})
 </div>
+
 
 <hr> {{meteo | json}}

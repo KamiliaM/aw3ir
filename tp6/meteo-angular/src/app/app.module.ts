@@ -31,16 +31,15 @@ const appRoutes: Routes = [
     AppComponent,
     MeteoComponent,MeteoDetailComponent
   ],
+
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-
     FormsModule, //<-- Ajouter la référence ici aussi
-
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+  )
   ],
   providers: [],
   bootstrap: [AppComponent]

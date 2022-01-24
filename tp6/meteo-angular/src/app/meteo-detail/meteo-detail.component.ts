@@ -20,7 +20,7 @@ export class MeteoDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.getMeteo();
+    this.getMeteo();    
   }
 
   getMeteo(): void {
